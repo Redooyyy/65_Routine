@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -109,6 +109,30 @@
                 transform: translate(50px, 50px);
             }
         }
+
+        /* Responsive Design for Phones */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .reo {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+                background: rgba(10, 25, 47, 0.8);
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+            }
+        }
     </style>
     <!-- Google Font for Modern Look -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -133,7 +157,7 @@
             <tr>
                 <td>08/04/2025</td>
                 <td>12:30-01:30PM</td>
-                <td>BUS 1205: Business Technology Entrepreneurship</td>
+                <td>BUSI 205: Business Technology Entrepreneurship</td>
                 <td>Ms. Shaharear Akthar</td>
             </tr>
             <tr>
