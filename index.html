@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,48 +7,43 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(circle, #0f0c29, #302b63, #24243e);
-            color: #fff;
+            background: #0a192f; /* Dark blue background */
+            color: #ccd6f6; /* Light text color */
             overflow-x: hidden;
         }
 
-        h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-top: 20px;
-            color: #00ffcc;
-            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-            animation: glow 2s infinite alternate;
+        /* Header with REO */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(10, 25, 47, 0.9);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
-        /* Futuristic Animation for "REO" */
-        @keyframes glow {
-            0% {
-                text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
-            }
-            100% {
-                text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
-            }
+        h1 {
+            font-size: 2rem;
+            color: #64ffda; /* Neon teal */
+            margin: 0;
         }
 
         .reo {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            color: #00ffcc;
-            text-align: center;
-            margin-top: 20px;
-            animation: float 3s infinite ease-in-out, glow 2s infinite alternate;
+            color: #64ffda;
+            animation: glow 2s infinite alternate;
         }
 
-        @keyframes float {
-            0%, 100% {
-                transform: translateY(0);
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #64ffda;
             }
-            50% {
-                transform: translateY(-10px);
+            100% {
+                text-shadow: 0 0 15px #64ffda;
             }
         }
 
@@ -57,26 +52,25 @@
             width: 80%;
             margin: 40px auto;
             border-collapse: collapse;
-            background-color: rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+            background-color: rgba(10, 25, 47, 0.8);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             animation: slideIn 1.5s ease-in-out;
         }
 
         th, td {
             padding: 15px;
             text-align: left;
-            border-bottom: 1px solid rgba(0, 255, 204, 0.2);
+            border-bottom: 1px solid rgba(100, 255, 218, 0.2);
         }
 
         th {
-            background-color: #00ffcc;
-            color: #0f0c29;
-            font-size: 1.2rem;
-            text-shadow: 0 0 5px #00ffcc;
+            background-color: #112240; /* Darker blue */
+            color: #64ffda;
+            font-size: 1.1rem;
         }
 
         tr:hover {
-            background-color: rgba(0, 255, 204, 0.1);
+            background-color: rgba(100, 255, 218, 0.1);
             transition: background-color 0.3s ease;
         }
 
@@ -100,8 +94,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle, transparent 20%, #0f0c29 20%, #0f0c29 80%, transparent 80%, transparent),
-                        radial-gradient(circle, transparent 20%, #0f0c29 20%, #0f0c29 80%, transparent 80%, transparent);
+            background: radial-gradient(circle, transparent 20%, #0a192f 20%, #0a192f 80%, transparent 80%, transparent),
+                        radial-gradient(circle, transparent 20%, #0a192f 20%, #0a192f 80%, transparent 80%, transparent);
             background-size: 50px 50px;
             animation: moveBackground 10s linear infinite;
             z-index: -1;
@@ -116,13 +110,15 @@
             }
         }
     </style>
-    <!-- Google Font for Futuristic Look -->
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Font for Modern Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Midterm Exam Routine - Batch 65B</h1>
-    <div class="reo">REO</div>
+    <header>
+        <h1>Midterm Exam Routine - Batch 65B</h1>
+        <div class="reo">REO</div>
+    </header>
 
     <table>
         <thead>
